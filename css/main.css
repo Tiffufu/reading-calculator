@@ -87,8 +87,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+:root {
+  --main-color: #01579B;
+  --shadow: #004275;
+}
+
 body {
-  font-size: 1.5em;
+  font-size: 1.2rem;
   background: #ffffff;
 
 }
@@ -100,11 +105,11 @@ h1 {
   font-size: 2.5em;
   margin: 0;
   font-weight: bold;
-  background-color: #DB3026;
+  background-color: var(--main-color);
   height: auto;
   vertical-align: middle;
-  border-bottom: 2px solid #B01911;
-  text-shadow: 1px 1px 3px #890700;
+  border-bottom: 2px solid var(--shadow);
+  text-shadow: 1px 1px 3px var(--shadow);
 }
 
 .quote {
@@ -149,10 +154,10 @@ input {
 
 .calculate-btn {
   font-weight: bold;
-  font-size: 35px;
-  background-color: #e62739;
+  font-size: 2rem;
+  background-color: var(--main-color);
   border: 0;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   border-radius: 12px;
   margin-bottom: 2em;
   margin-top: 2em;
