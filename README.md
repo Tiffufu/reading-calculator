@@ -1,2 +1,2 @@
 # reading-calculator
-A simple app that calculates pages to read
+A simple app that generates a daily reading plan.
