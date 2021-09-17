@@ -88,7 +88,7 @@ textarea {
    ========================================================================== */
 
 :root {
-  --main-color: #0C66DC;
+  --main-color: #0c66dc;
   --shadow: #1446bd;
   --input-border: #eaeaea;
 }
@@ -96,7 +96,6 @@ textarea {
 body {
   font-size: 1.2rem;
   background: #ffffff;
-
 }
 
 h1 {
@@ -132,8 +131,7 @@ h1 {
   font-size: 2em;
 }
 
-
-input[type=text],
+input[type='text'],
 textarea {
   outline: 2px solid var(--input-border);
   padding: 3px 0px 3px 3px;
@@ -141,7 +139,7 @@ textarea {
   border: 1px solid var(--input-border);
 }
 
-input[type=text]:focus,
+input[type='text']:focus,
 textarea:focus {
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   padding: 3px 0px 3px 3px;
@@ -162,6 +160,31 @@ input {
   border-radius: 10px;
   margin-bottom: 2em;
   margin-top: 2em;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  height: 6.25rem;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fafafa;
+  color: #707070;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer i {
+  /* font-size: 2rem; */
+  margin-left: 0.5rem;
 }
 
 /* ==========================================================================
@@ -238,7 +261,7 @@ input {
 
 .clearfix::before,
 .clearfix::after {
-  content: " ";
+  content: ' ';
   display: table;
 }
 
@@ -286,20 +309,20 @@ input {
   }
 
   a[href]::after {
-    content: " (" attr(href) ")";
+    content: ' (' attr(href) ')';
   }
 
   abbr[title]::after {
-    content: " (" attr(title) ")";
+    content: ' (' attr(title) ')';
   }
 
   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
+  a[href^='#']::after,
+  a[href^='javascript:']::after {
+    content: '';
   }
 
   pre {
@@ -337,4 +360,3 @@ input {
     page-break-after: avoid;
   }
 }
-
